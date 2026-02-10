@@ -1,0 +1,20 @@
+const text = "MERN Stack Developer";
+let i = 0;
+
+function typingEffect() {
+  if (i < text.length) {
+    document.getElementById("typing").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typingEffect, 100);
+  }
+}
+
+typingEffect();
+
+img.addEventListener("mouseenter", () => {
+  speed = 0.01;
+});
+
+img.addEventListener("mouseleave", () => {
+  speed = 0.05;
+});
